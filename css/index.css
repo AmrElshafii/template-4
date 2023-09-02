@@ -1,0 +1,50 @@
+/* general styling */
+html, body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 410px) {
+    html, body {
+        width: fit-content;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+}
+
+/* start sidebar */
+.page {
+    display: flex;
+}
+
+.sidebar h2 {}
+
+.sidebar ul {}
+
+.sidebar ul li {}
+
+.sidebar ul a {}
+/* end sidebar */

@@ -1,77 +1,78 @@
-/* start general box */
-.box-space {
-    justify-content: space-between;
+/* start general */
+.m-10 {
+    margin: 10px;
 }
-/* end general box */
-/* start grid-box */
-.grid-box {
+.m-20 {
+    margin: 20px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-20 {
+    padding: 20px;
+}
+.rad-6 {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.pv-10 {
+    padding: 10px 0px;
+}
+/* end general */
+
+/* start font */
+.fs-14 {
+    font-size: 14px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+.txt-c {
+    text-align: center;
+}
+.txt-cap {
+    text-transform: capitalize;
+}
+.txt-up {
+    text-transform: uppercase;
+}
+/* end font */
+/* start box */
+.d-grid {
     display: grid;
-    gap: 30px;
 }
-.box-300 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.d-flex {
+    display: flex;
+}
+.h-center {
+    justify-content: center;
+}
+.v-center {
+    align-items: center;
 }
 .box-250 {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.box-h-center {
-    justify-content: center;
+.box-350 {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-.box-v-center {
-    align-items: center;
+.gap-20 {
+    gap: 20px;
 }
-/* end grid-box */
-/* start flex-box */
-.flex-box {
-    display: flex;
+.gap-30 {
+    gap: 30px;
 }
-.flex-wrap {
-    flex-wrap: wrap;
-}
-.flex-col {
-    flex-direction: column;
-}
-.flex-row {
-    flex-direction: row;
-}
-/* end flex-box */
-/* start general styling */
-.bg-eee {
-    background-color: #eee;
-}
-.bg-ccc {
-    background-color: #ccc;
-}
-.mg-10 {
-    margin: 10px;
-}
-.mg-20 {
-    margin: 20px;
-}
-.pd-10 {
-    padding: 10px;
-}
-.pd-20 {
-    padding: 20px;
-}
-.text-gray {
-    color: gray;
-}
-.text-white {
-    color: white;
-}
-.circle {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-.unsharp {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-/* end general styling */
+/* end box */
