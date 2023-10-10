@@ -50,11 +50,10 @@ section {
 /* start sidebar */
 .page {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sidebar {
-    height: 100%;
     box-shadow: 0 0 10px #ddd;
     width: 250px;
 }
