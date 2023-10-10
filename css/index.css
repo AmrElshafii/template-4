@@ -331,7 +331,7 @@ section {
     margin: 20px 10px 30px;
 }
 
-.dashboard .content .box a {
+.dashboard .content .box .anchor {
     justify-content: flex-end;
     color: white;
     padding: 5px 10px;
@@ -350,5 +350,51 @@ section {
 
 .dashboard .content .box a:hover {
     background-color: #006fee;
+}
+
+.dashboard .box:not(:nth-child(1)) {
+    padding: 10px;
+}
+
+.dashboard h2 {}
+
+.dashboard p {}
+
+.dashboard form {
+    display: grid;
+    gap: 20px;
+}
+
+.dashboard form input {
+    border: 0px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+}
+
+.dashboard form input.anchor {
+    width: fit-content;
+    border: 0px;
+    justify-self: flex-end;
+    margin: 5px;
+}
+
+.dashboard form textarea {
+    border: 0px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    resize: none;
 }
 /* end dashboard */
