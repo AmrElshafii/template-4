@@ -244,7 +244,7 @@ section {
 
 .dashboard .content {
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 20px;
 }
 
@@ -298,19 +298,7 @@ section {
     justify-content: space-evenly;
 }
 
-.dashboard .content .box .name{
-    display: grid;
-    justify-items: center;
-    margin-bottom: 10px;
-}
-
-.dashboard .content .box .num {
-    display: grid;
-    justify-items: center;
-    margin-bottom: 10px;
-}
-
-.dashboard .content .box .price {
+.dashboard .content .box .subs{
     display: grid;
     justify-items: center;
     margin-bottom: 10px;
@@ -332,7 +320,6 @@ section {
 }
 
 .dashboard .content .box .anchor {
-    justify-content: flex-end;
     color: white;
     padding: 5px 10px;
     border-radius: 6px;
@@ -346,6 +333,7 @@ section {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    cursor: pointer;
 }
 
 .dashboard .content .box a:hover {
@@ -353,12 +341,12 @@ section {
 }
 
 .dashboard .box:not(:nth-child(1)) {
-    padding: 10px;
+    padding: 20px;
 }
 
-.dashboard h2 {}
-
-.dashboard p {}
+.dashboard p.sub {
+    color: #888888;
+}
 
 .dashboard form {
     display: grid;
@@ -381,7 +369,7 @@ section {
     width: fit-content;
     border: 0px;
     justify-self: flex-end;
-    margin: 5px;
+    margin: 5px; 
 }
 
 .dashboard form textarea {
@@ -396,5 +384,149 @@ section {
     width: 100%;
     height: 180px;
     resize: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dashboard .box .rec {
+    --blue: #0075ff;
+    --orange: #f59e0b;
+    --green: #22c55e;
+    display: flex;
+    margin-top: 10px;
+}
+
+.dashboard .box .rec .more {
+    flex: 1 0 auto;
+}
+
+.dashboard .content .box i {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.dashboard .content .box i.one {
+    background-color: rgb(0 117 255 / 20%);
+    color: var(--blue);
+}
+
+.dashboard .content .box i.two {
+    background-color: rgb(245 158 11 / 20%);
+    color: var(--orange);
+}
+
+.dashboard .content .box i.three {
+    background-color: rgb(34 197 94 / 20%);
+    color: var(--green);
+}
+
+.dashboard .box span:not(.num) {
+    color: #888888;
+}
+
+.dashboard .box .more p {
+    margin: 5px 0px 10px;
+    font-weight: bold;
+}
+
+.dashboard .box div .more .num {
+    color: #ffffff;
+    padding: 0px 3px;
+    font-size: 13px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    top: -25px;
+}
+
+.dashboard .box div .more .num.one {
+    left: calc(80% - 14px);
+    background-color: var(--blue);
+}
+
+.dashboard .box div .more .num.two {
+    left: calc(55% - 14px);
+    background-color: var(--orange);
+}
+
+.dashboard .box div .more .num.three {
+    left: calc(75% - 14px);
+    background-color: var(--green);
+}
+
+.dashboard .box div {
+    position: relative;
+}
+
+.dashboard .box div .more .num::after {
+    content: "";
+    border: 5px solid transparent;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    translate: -50%;
+}
+
+.dashboard .box div .more .num.one::after {
+    border-top: 5px solid var(--blue);
+}
+
+.dashboard .box div .more .num.two::after {
+    border-top: 5px solid var(--orange);
+}
+
+.dashboard .box div .more .num.three::after {
+    border-top: 5px solid var(--green);
+}
+
+
+.dashboard .box div .more .line {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin: 10px 0px;
+}
+
+.dashboard .box div .more .line.one {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.dashboard .box div .more .line.two {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.dashboard .box div .more .line.three {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.dashboard .box div .more .line::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard .box div .more .line.one::after {
+    width: 80%;
+    background-color: var(--blue);
+}
+
+.dashboard .box div .more .line.two::after {
+    width: 55%;
+    background-color: var(--orange);
+}
+
+.dashboard .box div .more .line.three::after {
+    width: 75%;
+    background-color: var(--green);
 }
 /* end dashboard */
