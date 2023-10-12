@@ -581,8 +581,8 @@ section {
     width: 100%;
     display: flex;
     align-items: center;
-    grid-auto-flow: column;
-    justify-content: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 776px) {
