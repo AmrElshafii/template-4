@@ -268,7 +268,7 @@ section {
     align-items: center;
     justify-content: space-between;
     background-color: #eee;
-    padding: 10px 20px;
+    padding: 20px 20px 40px;
 }
 
 .dashboard .content .box .upper .mid {
@@ -294,19 +294,39 @@ section {
     box-shadow: 0 0 5px #ddd;
 }
 
+@media (max-width: 776px) {
+    .dashboard .content .box .avatar img {
+        display: block;
+        margin: -30px auto 0px;
+    }
+}
+
 .dashboard .content .box .description {
     margin: 20px 0px 10px;
     border: 0px solid #eee;
     border-width: 2px 0px;
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.dashboard .content .box .subs{
+@media (max-width: 776px) {
+    .dashboard .content .box .upper img {
+        display: none;
+    }
+}
+
+.dashboard .content .box .subs {
     display: grid;
     justify-items: center;
     margin-bottom: 10px;
+    flex: 1;
+}
+
+@media (max-width: 776px) {
+    .dashboard .content .box:nth-child(1) .description {
+        flex-direction: column;
+    }
 }
 
 .dashboard .content .box .title {
@@ -733,4 +753,140 @@ section {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+
+.dashboard .box:nth-child(9) {
+    position: relative;
+}
+
+.dashboard .box:nth-child(9) ul {
+    position: relative;
+}
+
+.dashboard .box:nth-child(9) ul::before {
+    content: "";
+    position: absolute;
+    left: 11.5px;
+    top: 0px;
+    background-color: var(--blue);
+    width: 2px;
+    height: 100%;
+}
+
+.dashboard .box:nth-child(9) ul li {
+    margin-top: 25px;
+    position: relative;
+    margin-left: 35px;
+}
+
+.dashboard .box:nth-child(9) ul li::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    translate: 0% -50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid white;
+    outline: 3px solid var(--blue);
+}
+
+.dashboard .box:nth-child(9) ul li.odd::before {
+    background-color: white;
+}
+
+.dashboard .box:nth-child(9) ul li.animated::before {
+    animation: color-change .75s infinite alternate-reverse ease-in-out;
+    -webkit-animation: color-change .75s infinite alternate-reverse ease-in-out;
+}
+
+.dashboard .box:nth-child(9) img {
+    position: absolute;
+    bottom: 10px;
+    width: 150px;
+    right: 30px;
+    opacity: .2;
+}
+
+@media (max-width: 776px) {
+    .dashboard .box:nth-child(9) img {
+        display: none;
+    }
+}
+
+.dashboard .box:nth-child(10) ul li {
+    margin-left: 50px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.dashboard .box:nth-child(10) ul li p {
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.dashboard .box:nth-child(10) ul li span {
+    color: #888;
+    font-size: 13px;
+}
+
+.dashboard .box:nth-child(10) ul li::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    translate: 0px -50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.dashboard .box:nth-child(10) ul li::after {
+    content: "";
+    position: absolute;
+    left: -17.5px;
+    top: 0px;
+    height: 100%;
+    width: 1px;
+}
+
+.dashboard .box:nth-child(10) ul li.blue::after,
+.dashboard .box:nth-child(10) ul li.blue::before {
+    background-color: var(--blue);
+}
+
+.dashboard .box:nth-child(10) ul li.green::after,
+.dashboard .box:nth-child(10) ul li.green::before {
+    background-color: var(--green);
+}
+
+.dashboard .box:nth-child(10) ul li.orange::after,
+.dashboard .box:nth-child(10) ul li.orange::before {
+    background-color: var(--orange);
+}
+
+.dashboard .box:nth-child(10) ul li.red::after,
+.dashboard .box:nth-child(10) ul li.red::before {
+    background-color: var(--red);
+}
+
+/* animation */
+@keyframes color-change {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: var(--blue);
+    }
+}
 /* end dashboard */
+
