@@ -827,6 +827,7 @@ section {
 
 .dashboard .box:nth-child(10) ul li p {
     font-weight: bold;
+    font-size: 14px;
     margin: 5px 0px;
 }
 
