@@ -880,6 +880,44 @@ section {
     background-color: var(--red);
 }
 
+.dashboard .box:nth-child(11) .author {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .box:nth-child(11) .author img {
+    width: 50px;
+    height: 50px;
+    margin: 15px 10px 0px 0px;
+}
+
+.dashboard .box:nth-child(11) .author .name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dashboard .box:nth-child(11) .author .time {
+    color: #888888;
+}
+
+.dashboard .box:nth-child(11) div.quote {
+    padding: 20px 0px;
+    margin: 20px 0px;
+    border: 0px solid #eee;
+    border-width: 1px 0px;
+    text-transform: capitalize;
+    line-height: 1.8;
+    min-height: 140px;
+    font-weight: 600;
+}
+
+.dashboard .box:nth-child(11) .details {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+}
+
 /* animation */
 @keyframes color-change {
     0% {
