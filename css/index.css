@@ -998,6 +998,20 @@ section {
     }
 }
 
+.dashboard table {
+    grid-column: 1 / 3; 
+}
+
+.dashboard .box:nth-child(13) h2 {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1150px) {
+    .dashboard table {
+        grid-column: 1 / 2; 
+    }
+}
+
 .dashboard table tbody tr td img {
     width: 32px;
     height: 32px;
@@ -1006,6 +1020,16 @@ section {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    margin-left: -20px;
+    border: 2px solid #eee;
+}
+
+.dashboard .box:nth-child(13) thead {
+    background-color: #eee;
+}
+
+.dashboard .box:nth-child(13) tr td {
+    padding: 10px;
 }
 /* end dashboard */
 
