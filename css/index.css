@@ -268,7 +268,8 @@ section {
     align-items: center;
     justify-content: space-between;
     background-color: #eee;
-    padding: 20px 20px 40px;
+    padding: 10px 20px 40px;
+    min-height: 140px;
 }
 
 .dashboard .content .box .upper .mid {
@@ -995,6 +996,16 @@ section {
     100% {
         background-color: var(--blue);
     }
+}
+
+.dashboard table tbody tr td img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 /* end dashboard */
 
